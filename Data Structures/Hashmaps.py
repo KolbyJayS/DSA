@@ -15,19 +15,24 @@ d.values() # returns all values
 d.keys() # returns all keys
 d.items() # returns all key,value pairs
 
+# Dict comprehension
+myMap = { i: 2*i for i in range(3) }
+print(myMap)
+
+# Looping through maps
+myMap = { "alice": 90, "bob": 70 }
+for key in myMap:
+    print(key, myMap[key])
+
+for val in myMap.values():
+    print(val)
+
+for key, val in myMap.items():
+    print(key, val)
+
 
 # Used for:
 
 # Frequency counting
 # Index mapping
 # Memoization
-
-
-# HashSets
-
-# Can't have duplicates. Like a Hashmap but only the keys.
-
-s = set() # Initializes a hashset
-s.add(x) # adds x element to hashset s
-s.remove(x) # removes x element from hashset s
-x in s # returns boolean if element x is in hashset s
